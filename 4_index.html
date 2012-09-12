@@ -50,6 +50,8 @@ http://www.initializr.com/  ::  http://demo.html5boilerplate.com/
 		<fb:like href="http://intro-to-fb.theiplatform.info/4_index.html" send="true" width="450" show_faces="true"></fb:like>
 		
 		<div><a id="a_share" href="javascript: void(0);">Share</a></div>
+		<div><a id="a_sendRequestToRecipients" href="javascript: void(0);">sendRequestToRecipients</a></div>
+		<div><a id="a_sendRequestViaMultiFriendSelector" href="javascript: void(0);">sendRequestViaMultiFriendSelector</a></div>
 		<div id="response"></div>
 		
 		<div><a href="/">contents</a></div>
@@ -64,7 +66,7 @@ http://www.initializr.com/  ::  http://demo.html5boilerplate.com/
 			(function(d, s, id) {
 			  var js, fjs = d.getElementsByTagName(s)[0];
 			  if (d.getElementById(id)) return;
-			  js = d.createElement(s); js.id = id;
+			  js = d.createElement(s); js.id = id; js.async = true;
 			  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=372496206160214";
 			  fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
