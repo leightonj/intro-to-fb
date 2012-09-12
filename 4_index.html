@@ -62,12 +62,23 @@ http://www.initializr.com/  ::  http://demo.html5boilerplate.com/
 		<script src="js/main.js"></script>
 		
 		<!-- load FB sdk async -->
-		<script>			
+		<script>
+			// window.fbAsyncInit = function(){
+			// 	FB.init({
+			// 		appId      : '372496206160214', // App ID
+			// 		channelUrl : '//intro-to-fb.theiplatform.info/channel.html', // Channel File
+			// 		status     : true, // check login status
+			// 		cookie     : true, // enable cookies to allow the server to access the session
+			// 		xfbml      : true  // parse XFBML
+			// 	});
+			// };
+			
 			(function(d, s, id) {
 			  var js, fjs = d.getElementsByTagName(s)[0];
 			  if (d.getElementById(id)) return;
 			  js = d.createElement(s); js.id = id; js.async = true;
 			  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=372496206160214";
+			  // js.src = "//connect.facebook.net/en_GB/all.js";
 			  fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
 		</script>
